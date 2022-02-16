@@ -1,0 +1,36 @@
+
+.slider-container{
+    height: 100%;
+}
+
+
+#or_sec { width:100%; text-align:center; border-bottom: 1px solid #e0e0e0; line-height:0.1em; margin:10px 0 20px; } 
+#or_sec span { background:#fff; padding:0 10px; }
+
+#login-form input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#login-form a {
+    font-weight: 400; color: #1868f5; text-decoration: none;
+}
+
+.slider-container .carousel-caption {
+    color: #000;
+    font-size: 18px;
+    position: initial;
+}
+
+.carousel-inner > .carousel-item > img{
+    /* margin:auto; */
+    margin-left: 50px;
+    
+}
+
+.carousel-caption p{
+    width: 70%; font-weight: 500; font-size: 20px;
+    margin-left: 50px;
+}
