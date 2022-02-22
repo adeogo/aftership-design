@@ -51,25 +51,59 @@
           
           <li>
               <a href="home">
-                <div class="navList__heading row row--align-v-center">
-                  <span class="navList__subheading-icon"><i class="fas fa-home"></i></span>
-                  <span class="navList__subheading-title">Home</span>
+                <div class="navList__subheading row row--align-v-center">
+                  <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-home"></i></span> Home</span>
                 </div>
-                
               </a>
           </li>
           
             <li>
             <div class="navList__subheading row row--align-v-center">
-              <span class="navList__subheading-icon"><i class="fas fa-truck"></i></span>
-              <span class="navList__subheading-title">Shipments</span>
+              <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-truck "></i></span> Shipments</span>
             </div>
             <ul class="subList subList--hidden">
-              <li class="subList__item">Menu 1</li>
-              <li class="subList__item">Menu 2</li>
-              <li class="subList__item">Menu 3</li>
+              <li class="subList__item"><a href="#">Menu 1</a></li>
+              <li class="subList__item"><a href="#">Menu 2</a></li>
+              <li class="subList__item"><a href="#">Menu 3</a></li>
+              
             </ul>
           </li>
+          
+            <li>
+            <div class="navList__subheading row row--align-v-center">
+              <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-newspaper "></i></span> Tracking Pages</span>
+            </div>
+            <ul class="subList subList--hidden">
+              <li class="subList__item"><a href="#">Menu 1</a></li>
+              <li class="subList__item"><a href="#">Menu 2</a></li>
+              <li class="subList__item"><a href="#">Menu 3</a></li>
+              
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-envelope"></i></span> Notifications</span>
+              </div>
+            </a>
+        </li>
+          
+          <li>
+            <a href="#">
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-chart-bar"></i></span> Analytics</span>
+              </div>
+            </a>
+        </li>
+          
+          <li>
+            <a href="#">
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-tree"></i></span> Apps</span>
+              </div>
+            </a>
+        </li>
           
         </ul>
       </div>
@@ -242,17 +276,14 @@
   
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
-  <script src="https://www.amcharts.com/lib/3/serial.js"></script>
-  <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
 
-  <script>/* Scripts for css grid dashboard */
+
+  <script>
 
     $(document).ready(() => {
       addResizeListeners();
       setSidenavListeners();
       setUserDropdownListener();
-      renderChart();
       setMenuClickListener();
       setSidenavCloseListener();
     });
@@ -304,73 +335,6 @@
       });
     }
     
-    // Draw the chart
-    function renderChart() {
-      const chart = AmCharts.makeChart( "chartdiv", {
-        "type": "serial",
-        "theme": "light",
-        "dataProvider": [ {
-          "month": "Jan",
-          "visits": 2025
-        }, {
-          "month": "Feb",
-          "visits": 1882
-        }, {
-          "month": "Mar",
-          "visits": 1809
-        }, {
-          "month": "Apr",
-          "visits": 1322
-        }, {
-          "month": "May",
-          "visits": 1122
-        }, {
-          "month": "Jun",
-          "visits": 1114
-        }, {
-          "month": "Jul",
-          "visits": 984
-        }, {
-          "month": "Aug",
-          "visits": 711
-        }, {
-          "month": "Sept",
-          "visits": 665
-        }, {
-          "month": "Oct",
-          "visits": 580
-        } ],
-        "valueAxes": [ {
-          "gridColor": "#FFFFFF",
-          "gridAlpha": 0.2,
-          "dashLength": 0
-        } ],
-        "gridAboveGraphs": true,
-        "startDuration": 1,
-        "graphs": [ {
-          "balloonText": "[[category]]: <b>[[value]]</b>",
-          "fillAlphas": 0.8,
-          "lineAlpha": 0.2,
-          "type": "column",
-          "valueField": "visits"
-        } ],
-        "chartCursor": {
-          "categoryBalloonEnabled": false,
-          "cursorAlpha": 0,
-          "zoomable": false
-        },
-        "categoryField": "month",
-        "categoryAxis": {
-          "gridPosition": "start",
-          "gridAlpha": 0,
-          "tickPosition": "start",
-          "tickLength": 20
-        },
-        "export": {
-          "enabled": false
-        }
-      });
-    }
     
     function toggleClass(el, className) {
       if (el.hasClass(className)) {

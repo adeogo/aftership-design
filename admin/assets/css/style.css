@@ -234,9 +234,18 @@ html, body {
   .navList {
     width: 240px;
     padding: 0;
-    margin: 0;
+    margin-top: 15px;
     list-style-type: none;
   }
+
+  .navList li {
+    margin-bottom: 10px;
+  }
+
+  .navList a {
+    color: #4c4d4e;
+  }
+
   .navList__heading {
     position: relative;
     display: flex;
@@ -253,16 +262,12 @@ html, body {
     font-size: 16px;
   }
   .navList__subheading-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 20px;
     color: #919eab;
     width: 12px;
+    margin-right: 10px;
   }
-  .navList__subheading-title {
-    margin: 0 15px;
-  }
+
   .navList__subheading:after {
     position: absolute;
     content: "";
@@ -280,7 +285,7 @@ html, body {
     cursor: pointer;
   }
   .navList__subheading--open {
-    background-color: #303753;
+    background-color: #f1f2f3;
   }
   .navList__subheading--open:after {
     transform: rotate(315deg);
@@ -289,7 +294,7 @@ html, body {
     padding: 0;
     margin: 0;
     list-style-type: none;
-    background-color: #262c43;
+    background-color: #FFF;
     visibility: visible;
     overflow: hidden;
     max-height: 200px;
@@ -298,7 +303,7 @@ html, body {
   .navList .subList__item {
     padding: 8px;
     text-transform: capitalize;
-    padding: 8px 30px;
+    padding: 2px 30px;
     color: #D3D3D3;
   }
   .navList .subList__item:first-child {
@@ -317,6 +322,7 @@ html, body {
     grid-area: main;
     background-color: #EAEDF1;
     color: #394263;
+    margin-top: -50px;
   }
   .main__cards {
     display: block;
