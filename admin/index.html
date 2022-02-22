@@ -1,0 +1,415 @@
+﻿<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  </head>
+
+
+<body class="bg-light">
+
+  <section class="container-fluid bg-white pt-2 sticky-lg-top">
+    <div class="d-flex bd-highlight">
+      <div class="p-2 flex-grow-1 bd-highlight">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars header__menu"></i>
+        <a class="navbar-brand" href="#">
+          <img src="../assets/img/logo_aftership.svg" width="" id="logo" >
+        </a>
+      </div>
+      <div class="p-2 bd-highlight">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="p-2 bd-highlight">
+        <div class="d-flex align-items-center">
+          <div class="flex-shrink-0">
+            <img src="assets/img/profile.png" class="rounded" alt="" style="width: 45px;">
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <small>
+              John Doe
+            <br/>
+            jdoe@email.com
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="grid">
+    <aside class="sidenav" style="background-color: #f6f6f7;">
+      <div class="row row--align-v-center row--align-h-center">
+        <ul class="navList">
+          
+          <li>
+              <a href="home">
+                <div class="navList__heading row row--align-v-center">
+                  <span class="navList__subheading-icon"><i class="fas fa-home"></i></span>
+                  <span class="navList__subheading-title">Home</span>
+                </div>
+                
+              </a>
+          </li>
+          
+            <li>
+            <div class="navList__subheading row row--align-v-center">
+              <span class="navList__subheading-icon"><i class="fas fa-truck"></i></span>
+              <span class="navList__subheading-title">Shipments</span>
+            </div>
+            <ul class="subList subList--hidden">
+              <li class="subList__item">Menu 1</li>
+              <li class="subList__item">Menu 2</li>
+              <li class="subList__item">Menu 3</li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </aside>
+  
+    <main class="main">
+      
+      <div class="main-overview">
+        <div class="overviewCard">
+          <div class="overviewCard-icon overviewCard-icon--document">
+             <i class="far fa-file-alt"></i>
+          </div>
+          <div class="overviewCard-description">
+            <h3 class="overviewCard-title text-light">New <strong>Document</strong></h3>
+            <p class="overviewCard-subtitle">Europe Trip</p>
+          </div>
+        </div>
+        <div class="overviewCard">
+          <div class="overviewCard-icon overviewCard-icon--calendar">
+             <i class="far fa-calendar-check"></i>
+          </div>
+          <div class="overviewCard-description">
+            <h3 class="overviewCard-title text-light">Upcoming <strong>Event</strong></h3>
+            <p class="overviewCard-subtitle">Chili Cookoff</p>
+          </div>
+        </div>
+        <div class="overviewCard">
+          <div class="overviewCard-icon overviewCard-icon--mail">
+             <i class="far fa-envelope"></i>
+          </div>
+          <div class="overviewCard-description">
+            <h3 class="overviewCard-title text-light">Recent <strong>Emails</strong></h3>
+            <p class="overviewCard-subtitle">+10</p>
+          </div>
+        </div>
+        <div class="overviewCard">
+          <div class="overviewCard-icon overviewCard-icon--photo">
+             <i class="far fa-file-image"></i>
+          </div>
+          <div class="overviewCard-description">
+            <h3 class="overviewCard-title text-light">New <strong>Album</strong></h3>
+            <p class="overviewCard-subtitle">House Concert</p>
+          </div>
+        </div>
+      </div> <!-- /.main__overview -->
+      <div class="main__cards">
+        <div class="card">
+          <div class="card__header">
+            <div class="card__header-title text-light">Your <strong>Events</strong>
+              <a href="#" class="card__header-link text-bold">View All</a>
+            </div>
+            <div class="settings">
+              <div class="settings__block"><i class="fas fa-edit"></i></div>
+              <div class="settings__block"><i class="fas fa-cog"></i></div>
+            </div>
+          </div>
+          <div class="card__main">
+            <div class="card__row">
+              <div class="card__icon"><i class="fas fa-gift"></i></div>
+              <div class="card__time">
+                <div>today</div>
+              </div>
+              <div class="card__detail">
+                <div class="card__source text-bold">Jonathan G</div>
+                <div class="card__description">Going away party at 8:30pm. Bring a friend!</div>
+                <div class="card__note">1404 Gibson St</div>
+              </div>
+            </div>
+            <div class="card__row">
+              <div class="card__icon"><i class="fas fa-plane"></i></div>
+              <div class="card__time">
+                <div>Tuesday</div>
+              </div>
+              <div class="card__detail">
+                <div class="card__source text-bold">Matthew H</div>
+                <div class="card__description">Flying to Bora Bora at 4:30pm</div>
+                <div class="card__note">Delta, Gate 27B</div>
+              </div>
+            </div>
+            <div class="card__row">
+              <div class="card__icon"><i class="fas fa-book"></i></div>
+              <div class="card__time">
+                <div>Thursday</div>
+              </div>
+              <div class="card__detail">
+                <div class="card__source text-bold">National Institute of Science</div>
+                <div class="card__description">Join the institute for an in-depth look at Stephen Hawking</div>
+                <div class="card__note">7:30pm, Carnegie Center for Science</div>
+              </div>
+            </div>
+            <div class="card__row">
+              <div class="card__icon"><i class="fas fa-heart"></i></div>
+              <div class="card__time">
+                <div>Friday</div>
+              </div>
+              <div class="card__detail">
+                <div class="card__source text-bold">24th Annual Heart Ball</div>
+                <div class="card__description">Join us and contribute to your favorite local charity.</div>
+                <div class="card__note">6:45pm, Austin Convention Ctr</div>
+              </div>
+            </div>
+            <div class="card__row">
+              <div class="card__icon"><i class="fas fa-heart"></i></div>
+              <div class="card__time">
+                <div>Saturday</div>
+              </div>
+              <div class="card__detail">
+                <div class="card__source text-bold">Little Rock Air Show</div>
+                <div class="card__description">See the Blue Angels fly with roaring thunder</div>
+                <div class="card__note">11:00pm, Jacksonville Airforce Base</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <div class="card__header-title text-light">Recent <strong>Documents</strong>
+              <a href="#" class="card__header-link text-bold">View All</a>
+            </div>
+            <div class="settings">
+              <div class="settings__block"><i class="fas fa-edit"></i></div>
+              <div class="settings__block"><i class="fas fa-cog"></i></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="documents">
+              <div class="document">
+                <div class="document__img"></div>
+                <div class="document__title">tesla-patents</div>
+                <div class="document__date">07/16/2018</div>
+              </div>
+              <div class="document">
+                <div class="document__img"></div>
+                <div class="document__title">yearly-budget</div>
+                <div class="document__date">09/04/2018</div>
+              </div>
+              <div class="document">
+                <div class="document__img"></div>
+                <div class="document__title">top-movies</div>
+                <div class="document__date">10/10/2018</div>
+              </div>
+              <div class="document">
+                <div class="document__img"></div>
+                <div class="document__title">trip-itinerary</div>
+                <div class="document__date">11/01/2018</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card--finance">
+          <div class="card__header">
+            <div class="card__header-title text-light">Monthly <strong>Spending</strong>
+              <a href="#" class="card__header-link text-bold">View All</a>
+            </div>
+            <div class="settings">
+              <div class="settings__block"><i class="fas fa-edit"></i></div>
+              <div class="settings__block"><i class="fas fa-cog"></i></div>
+            </div>
+          </div>
+          <div id="chartdiv"></div>
+        </div>
+      </div> <!-- /.main-cards -->
+    </main>
+  
+    <footer class="footer">
+      <p><span class="footer__copyright">&copy;</span> 2018 MTH</p>
+      <p>Crafted with <i class="fas fa-heart footer__icon"></i> by <a href="https://www.linkedin.com/in/matt-holland/" target="_blank" class="footer__signature">Matt H</a></p>
+    </footer>
+  </div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+  <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+  <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+  <script>/* Scripts for css grid dashboard */
+
+    $(document).ready(() => {
+      addResizeListeners();
+      setSidenavListeners();
+      setUserDropdownListener();
+      renderChart();
+      setMenuClickListener();
+      setSidenavCloseListener();
+    });
+    
+    // Set constants and grab needed elements
+    const sidenavEl = $('.sidenav');
+    const gridEl = $('.grid');
+    const SIDENAV_ACTIVE_CLASS = 'sidenav--active';
+    const GRID_NO_SCROLL_CLASS = 'grid--noscroll';
+    
+    function toggleClass(el, className) {
+      if (el.hasClass(className)) {
+        el.removeClass(className);
+      } else {
+        el.addClass(className);
+      }
+    }
+    
+    // User avatar dropdown functionality
+    function setUserDropdownListener() {
+      const userAvatar = $('.header__avatar');
+    
+      userAvatar.on('click', function(e) {
+        const dropdown = $(this).children('.dropdown');
+        toggleClass(dropdown, 'dropdown--active');
+      });
+    }
+    
+    // Sidenav list sliding functionality
+    function setSidenavListeners() {
+      const subHeadings = $('.navList__subheading'); console.log('subHeadings: ', subHeadings);
+      const SUBHEADING_OPEN_CLASS = 'navList__subheading--open';
+      const SUBLIST_HIDDEN_CLASS = 'subList--hidden';
+    
+      subHeadings.each((i, subHeadingEl) => {
+        $(subHeadingEl).on('click', (e) => {
+          const subListEl = $(subHeadingEl).siblings();
+    
+          // Add/remove selected styles to list category heading
+          if (subHeadingEl) {
+            toggleClass($(subHeadingEl), SUBHEADING_OPEN_CLASS);
+          }
+    
+          // Reveal/hide the sublist
+          if (subListEl && subListEl.length === 1) {
+            toggleClass($(subListEl), SUBLIST_HIDDEN_CLASS);
+          }
+        });
+      });
+    }
+    
+    // Draw the chart
+    function renderChart() {
+      const chart = AmCharts.makeChart( "chartdiv", {
+        "type": "serial",
+        "theme": "light",
+        "dataProvider": [ {
+          "month": "Jan",
+          "visits": 2025
+        }, {
+          "month": "Feb",
+          "visits": 1882
+        }, {
+          "month": "Mar",
+          "visits": 1809
+        }, {
+          "month": "Apr",
+          "visits": 1322
+        }, {
+          "month": "May",
+          "visits": 1122
+        }, {
+          "month": "Jun",
+          "visits": 1114
+        }, {
+          "month": "Jul",
+          "visits": 984
+        }, {
+          "month": "Aug",
+          "visits": 711
+        }, {
+          "month": "Sept",
+          "visits": 665
+        }, {
+          "month": "Oct",
+          "visits": 580
+        } ],
+        "valueAxes": [ {
+          "gridColor": "#FFFFFF",
+          "gridAlpha": 0.2,
+          "dashLength": 0
+        } ],
+        "gridAboveGraphs": true,
+        "startDuration": 1,
+        "graphs": [ {
+          "balloonText": "[[category]]: <b>[[value]]</b>",
+          "fillAlphas": 0.8,
+          "lineAlpha": 0.2,
+          "type": "column",
+          "valueField": "visits"
+        } ],
+        "chartCursor": {
+          "categoryBalloonEnabled": false,
+          "cursorAlpha": 0,
+          "zoomable": false
+        },
+        "categoryField": "month",
+        "categoryAxis": {
+          "gridPosition": "start",
+          "gridAlpha": 0,
+          "tickPosition": "start",
+          "tickLength": 20
+        },
+        "export": {
+          "enabled": false
+        }
+      });
+    }
+    
+    function toggleClass(el, className) {
+      if (el.hasClass(className)) {
+        el.removeClass(className);
+      } else {
+        el.addClass(className);
+      }
+    }
+    
+    // If user opens the menu and then expands the viewport from mobile size without closing the menu,
+    // make sure scrolling is enabled again and that sidenav active class is removed
+    function addResizeListeners() {
+      $(window).resize(function(e) {
+        const width = window.innerWidth; console.log('width: ', width);
+    
+        if (width > 750) {
+          sidenavEl.removeClass(SIDENAV_ACTIVE_CLASS);
+          gridEl.removeClass(GRID_NO_SCROLL_CLASS);
+        }
+      });
+    }
+    
+    // Menu open sidenav icon, shown only on mobile
+    function setMenuClickListener() {
+      $('.header__menu').on('click', function(e) { console.log('clicked menu icon');
+        toggleClass(sidenavEl, SIDENAV_ACTIVE_CLASS);
+        toggleClass(gridEl, GRID_NO_SCROLL_CLASS);
+      });
+    }
+    
+    // Sidenav close icon
+    function setSidenavCloseListener() {
+      $('.sidenav__brand-close').on('click', function(e) {
+        toggleClass(sidenavEl, SIDENAV_ACTIVE_CLASS);
+        toggleClass(gridEl, GRID_NO_SCROLL_CLASS);
+      });
+    }
+    </script>
+  
+</body>
+
+</html>
