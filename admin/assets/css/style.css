@@ -75,29 +75,17 @@ html, body {
     border: none;
   }
   .header__avatar {
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1609106/headshot.png");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.2);
     position: relative;
     margin: 0 26px;
-    width: 35px;
+    /* width: 35px; */
     height: 35px;
     cursor: pointer;
   }
-  .header__avatar:after {
-    position: absolute;
-    content: "";
-    width: 6px;
-    height: 6px;
-    background: none;
-    border-left: 2px solid #777;
-    border-bottom: 2px solid #777;
-    transform: rotate(-45deg) translateY(-50%);
-    top: 50%;
-    right: -18px;
-  }
+
   
   .dropdown {
     position: absolute;
@@ -320,7 +308,7 @@ html, body {
   
   .main {
     grid-area: main;
-    background-color: #EAEDF1;
+    background-color: #f6f6f7;
     color: #394263;
     margin-top: -50px;
   }
@@ -695,7 +683,7 @@ html, body {
       margin-left: 20px;
     }
     .header__avatar {
-      width: 40px;
+      /* width: 40px; */
       height: 40px;
     }
   }
