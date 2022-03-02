@@ -426,6 +426,21 @@ html, body {
     top: -2px;
     line-height: 1;
   }
+
+  .sidecard {
+    padding: 0px;
+  }
+
+  .sidecard a{
+    color: #6d7175;
+  }
+
+  .sidecard h5 {
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+
+  
   
   @media only screen and (min-width: 46.875em) {
     .grid {

@@ -14,15 +14,15 @@
 <body class="bg-light">
 
   <section class="container-fluid bg-white pt-2 sticky-lg-top">
-    <div class="d-flex bd-highlight">
-      <div class="p-2 flex-grow-1 bd-highlight">
+    <div class="d-flex">
+      <div class="p-2 flex-grow-1">
         <i class="fas fa-bars"></i>
         <i class="fas fa-bars header__menu"></i>
         <a class="navbar-brand" href="#">
           <img src="../assets/img/logo_aftership.svg" width="" id="logo" >
         </a>
       </div>
-      <div class="p-2 bd-highlight">
+      <div class="p-2">
         <div class="progress">
           <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
@@ -139,7 +139,7 @@
         <div class="row">
           <div class="col-12 col-lg-8">
             <div class="row">
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-lg-6 mb-4">
                 <div class="card card-noborder-bottom">
                   <div class="card-body">
                     <h5 class="card-title">VALID TRACKING SHIPMENTS</h5>
@@ -150,7 +150,7 @@
                   <div class="card-body">
                     <div class="d-flex">
                       <h5 class="card-title flex-grow-1">PENDING SHIPMENTS </h5>
-                      <a href="#" class="">></a>
+                      <a href="#" class=""><i class="fa text-dark">&#xf105;</i></a>
                     </div>
                     <p class="card-text">0 <span>(0%)</span></p>
                   </div>
@@ -161,7 +161,7 @@
                   <div class="card-body">
                     <div class="d-flex">
                       <h5 class="card-title flex-grow-1">EXCEPTION SHIPMENTS </h5>
-                      <a href="#" class="">></a>
+                      <a href="#" class=""><i class="fa text-dark">&#xf105;</i></a>
                     </div>
                     <p class="card-text">0 <span>(0%)</span></p>
                   </div>
@@ -170,7 +170,7 @@
                   <div class="card-body">
                     <div class="d-flex">
                       <h5 class="card-title flex-grow-1">SHIPMENT RETURNED TO SENDER </h5>
-                      <a href="#" class="">></a>
+                      <a href="#" class=""><i class="fa text-dark">&#xf105;</i></a>
                     </div>
                     <p class="card-text">0 <span>(0%)</span></p>
 
@@ -183,7 +183,7 @@
                   <div class="card-body">
                     <div class="d-flex">
                       <h5 class="card-title flex-grow-1">Total shipments over time </h5>
-                      <a href="#" class="">></a>
+                      <a href="#" class=""><i class="fa text-dark">&#xf105;</i></a>
                     </div>
                     <p class="card-text">-</p>
                     <div style="padding: 100px 0;"></div>
@@ -191,27 +191,40 @@
                 </div>
               </div>
 
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-lg-6 mb-4">
                 <div class="card">
                   <div class="card-body">
                     <div class="d-flex">
                       <h5 class="card-title flex-grow-1">Tracking Page Visits </h5>
-                      <a href="#" class="">></a>
+                      <a href="#" class=""><i class="fa text-dark">&#xf105;</i></a>
                     </div>
-                    <p class="card-text">-</p>
+                    <p class="card-text">0</p>
                   </div>
                 </div>
               </div>
 
 
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-lg-6 mb-4">
                 <div class="card">
                   <div class="card-body">
                     <div class="d-flex">
-                      <h5 class="card-title flex-grow-1">Total shipments over time </h5>
-                      <a href="#" class="">></a>
+                      <h5 class="card-title flex-grow-1">Total notifications </h5>
+                      <a href="#" class=""><i class="fa text-dark">&#xf105;</i></a>
+                    </div>
+                    <p class="card-text">0</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 my-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <h5 class="card-title flex-grow-1">On-time shipments over time </h5>
+                      <a href="#" class=""><i class="fa text-dark">&#xf105;</i></a>
                     </div>
                     <p class="card-text">-</p>
+                    <div style="padding: 100px 0;"></div>
                   </div>
                 </div>
               </div>
@@ -227,32 +240,140 @@
                 </div>
                 <p class="card-text mb-4"><span>Monthly shipment quota usage</span></p>
                 <p class="card-text"><span>0 of 50 used</span></p>
-                <progress style="width: 100%"></progress>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </div>
             </div>
             
-            <div class="card card-noborder-bottom">
+            <div class="card card-noborder-bottom sidecard">
                 <div class="card-body">
                   <div class="d-flex">
                     <h5 class="card-title flex-grow-1">Need Help? </h5>
                   </div>
-                    <div class="d-flex mb-2">
-                      <h5 class="card-title flex-grow-1">Icon </h5>
-                      <a href="#" class="">Contact Support</a>
+
+                  <a href="#">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <i class="fa text-dark fa-2x">&#xf4ad;</i>
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h2 style="font-size: 1rem; font-weight: 600;">Contact Support</h2>
+                        <p style="font-size: 13px;">Submit a request and we will get back to you as soon as possible.</p>
+                      </div>
                     </div>
+                    
+                  </a>
                 </div>
               </div>
 
-              <div class="card card-noborder-top">
+              <div class="card card-noborder-top sidecard">
                 <div class="card-body">
-                  <div class="d-flex">
-                    <h5 class="card-title flex-grow-1">SHIPMENT RETURNED TO SENDER </h5>
-                    <a href="#" class="">></a>
-                  </div>
-                  <p class="card-text">0 <span>(0%)</span></p>
+                  <a href="#">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <i class="fa text-dark fa-2x">&#xf059;</i>
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h2 style="font-size: 1rem; font-weight: 600;">Help Center</h2>
+                        <p style="font-size: 13px;">Make use of our documents to get help.</p>
+                      </div>
+                    </div>
+                    
+                  </a>
                 </div>
               </div>
+
+              <div class="card mt-4">
+                <div class="card-body">
+                  <div class="d-flex">
+                    <h5 class="card-title flex-grow-1">Average Rating </h5>
+                    <a href="#" class=""><i class="fa text-dark">&#xf105;</i></a>
+                  </div>
+                  
+                  <div class="d-flex flex-row mb-3">
+                    <div class="p-2">5.0</div>
+                    <div class="p-2">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+
+                    </div>
+                    <div class="p-2">0 review</div>
+                  </div>
+
+                  <div class="d-flex">
+                    <div class="p-2"><i class="fa fa-star"></i> 5</div>
+                    <div class="p-2 flex-grow-1">
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="p-2">0</div>
+                  </div>
+                  
+                  <div class="d-flex">
+                    <div class="p-2"><i class="fa fa-star"></i> 4</div>
+                    <div class="p-2 flex-grow-1">
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="p-2">0</div>
+                  </div>
+                  
+                  <div class="d-flex">
+                    <div class="p-2"><i class="fa fa-star"></i> 3</div>
+                    <div class="p-2 flex-grow-1">
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="p-2">0</div>
+                  </div>
+                  
+                  <div class="d-flex">
+                    <div class="p-2"><i class="fa fa-star"></i> 2</div>
+                    <div class="p-2 flex-grow-1">
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="p-2">0</div>
+                  </div>
+                  
+                  <div class="d-flex">
+                    <div class="p-2"><i class="fa fa-star"></i> 1</div>
+                    <div class="p-2 flex-grow-1">
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="p-2">0</div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-12 mt-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <h5 class="card-title flex-grow-1">Shipments by transit time </h5>
+                      <a href="#" class=""><i class="fa text-dark">&#xf105;</i></a>
+                    </div>
+
+                    <div style="padding: 50px 0;"></div>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
+
+
         </div>
       </div>
     </main>
