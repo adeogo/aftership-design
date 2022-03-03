@@ -16,10 +16,9 @@
   <section class="container-fluid bg-white pt-2 sticky-lg-top">
     <div class="d-flex">
       <div class="p-2 flex-grow-1">
-        <i class="fas fa-bars"></i>
         <i class="fas fa-bars header__menu"></i>
-        <a class="navbar-brand" href="#">
-          <img src="../assets/img/logo_aftership.svg" width="" id="logo" >
+        <a class="navbar-brand" href="#" id="logo">
+          <img src="../assets/img/logo_aftership.svg" width=""  >
         </a>
       </div>
       <div class="p-2">
@@ -30,7 +29,10 @@
       
         
         <div class="header__avatar">
-          <div class="d-flex align-items-center">
+          <div class="dropdown">
+
+           
+            <div class="d-flex align-items-center dropdown-toggle" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             <div class="flex-shrink-0">
               <img src="assets/img/profile.png" class="rounded" alt="" style="width: 45px;">
             </div>
@@ -42,22 +44,52 @@
               </small>
             </div>
           </div>
-          <div class="dropdown">
-            <ul class="dropdown__list">
-              <li class="dropdown__list-item">
-                <span class="dropdown__icon"><i class="far fa-user"></i></span>
-                <span class="dropdown__title">my profile</span>
-              </li>
-              <li class="dropdown__list-item">
-                <span class="dropdown__icon"><i class="fas fa-clipboard-list"></i></span>
-                <span class="dropdown__title">my account</span>
-              </li>
-              <li class="dropdown__list-item">
-                <span class="dropdown__icon"><i class="fas fa-sign-out-alt"></i></span>
-                <span class="dropdown__title">log out</span>
-              </li>
-            </ul>
-          </div>
+
+
+
+
+  <div class="dropdown-menu profile-dropdown" aria-labelledby="profileDropdown">
+    <div class="card" style="width: 18rem;">
+      <div class="position-relative p-2 text-center">
+      <img src="assets/img/profile.png" class="rounded card-img-top position-relative top-0 start-0 " alt="" style="width: 45px;">
+    </div>
+      <div class="card-body text-center " style="margin-top: -10px;">
+        <h6 class="">User Name</h6>
+        <p>user@email.com</p>
+        <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Manage Account</a>
+
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <a href="#">
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <i class="fa text-muted mt-1">&#xf013;</i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-muted">
+                Settings
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="list-group-item">
+          <a href="#">
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <i class="fa text-muted mt-1">&#xf0a9;</i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-muted">
+                Sign Out
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+          
         </div>
     </div>
   </section>
@@ -127,7 +159,7 @@
       </div>
     </aside>
   
-    <main class="main" style="padding: 30px 50px;">
+    <main class="main">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -216,7 +248,7 @@
                 </div>
               </div>
 
-              <div class="col-12 my-4">
+              <div class="col-12 mt-2">
                 <div class="card">
                   <div class="card-body">
                     <div class="d-flex">
@@ -292,8 +324,8 @@
                   </div>
                   
                   <div class="d-flex flex-row mb-3">
-                    <div class="p-2">5.0</div>
-                    <div class="p-2">
+                    <div class="p-2 card-text">5.0</div>
+                    <div class="p-2 mt-1">
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star"></i>
@@ -301,7 +333,7 @@
                       <i class="fa fa-star"></i>
 
                     </div>
-                    <div class="p-2">0 review</div>
+                    <div class="p-2 mt-2 card-text"><span>0 review</span></div>
                   </div>
 
                   <div class="d-flex">
@@ -381,6 +413,7 @@
   
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.js"></script>
 
 
   <script>
