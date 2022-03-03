@@ -216,21 +216,28 @@ html, body {
     margin-right: 10px;
   }
 
-  .navList__subheading:after {
+  .menu-dropdown:after {
     position: absolute;
     content: "";
     height: 6px;
     width: 6px;
     top: 17px;
     right: 25px;
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgb(91,105,195);
+    border-bottom: 1px solid rgb(91,105,195);
     transform: rotate(225deg);
     transition: all 0.2s;
   }
   .navList__subheading:hover {
     background-color: #f1f2f3;
     cursor: pointer;
+  }
+
+  .active {
+    background-color: #edeeef;
+    color: #5b69c3;
+    cursor: pointer;
+    font-weight: 600;
   }
   .navList__subheading--open {
     background-color: #f1f2f3;
@@ -400,7 +407,33 @@ html, body {
     font-size: 13px;
     margin-bottom: 25px;
   }
+  
 
+  .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .upload-btn {
+    /*border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;*/
+    cursor: pointer;
+  }
+
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
 
   
   @media only screen and (min-width: 750px) {

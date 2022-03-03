@@ -100,27 +100,23 @@
         <ul class="navList">
           
           <li>
-              <a href="home">
-                <div class="navList__subheading row row--align-v-center">
+              <a href="index.html">
+                <div class="navList__subheading row row--align-v-center active">
                   <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-home"></i></span> Home</span>
                 </div>
               </a>
           </li>
           
             <li>
-            <div class="navList__subheading row row--align-v-center">
-              <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-truck "></i></span> Shipments</span>
-            </div>
-            <ul class="subList subList--hidden">
-              <li class="subList__item"><a href="#">Menu 1</a></li>
-              <li class="subList__item"><a href="#">Menu 2</a></li>
-              <li class="subList__item"><a href="#">Menu 3</a></li>
-              
-            </ul>
+              <a href="shipments.html">
+                <div class="navList__subheading row row--align-v-center">
+                  <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-truck "></i></span> Shipments</span>
+                </div>
+              </a>
           </li>
           
             <li>
-            <div class="navList__subheading row row--align-v-center">
+            <div class="navList__subheading row row--align-v-center menu-dropdown">
               <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-newspaper "></i></span> Tracking Pages</span>
             </div>
             <ul class="subList subList--hidden">
@@ -414,103 +410,7 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="../assets/js/bootstrap.bundle.js"></script>
-
-
-  <script>
-
-    $(document).ready(() => {
-      addResizeListeners();
-      setSidenavListeners();
-      setUserDropdownListener();
-      setMenuClickListener();
-      setSidenavCloseListener();
-    });
-    
-    // Set constants and grab needed elements
-    const sidenavEl = $('.sidenav');
-    const gridEl = $('.grid');
-    const SIDENAV_ACTIVE_CLASS = 'sidenav--active';
-    const GRID_NO_SCROLL_CLASS = 'grid--noscroll';
-    
-    function toggleClass(el, className) {
-      if (el.hasClass(className)) {
-        el.removeClass(className);
-      } else {
-        el.addClass(className);
-      }
-    }
-    
-    // User avatar dropdown functionality
-    function setUserDropdownListener() {
-      const userAvatar = $('.header__avatar');
-    
-      userAvatar.on('click', function(e) {
-        const dropdown = $(this).children('.dropdown');
-        toggleClass(dropdown, 'dropdown--active');
-      });
-    }
-    
-    // Sidenav list sliding functionality
-    function setSidenavListeners() {
-      const subHeadings = $('.navList__subheading'); console.log('subHeadings: ', subHeadings);
-      const SUBHEADING_OPEN_CLASS = 'navList__subheading--open';
-      const SUBLIST_HIDDEN_CLASS = 'subList--hidden';
-    
-      subHeadings.each((i, subHeadingEl) => {
-        $(subHeadingEl).on('click', (e) => {
-          const subListEl = $(subHeadingEl).siblings();
-    
-          // Add/remove selected styles to list category heading
-          if (subHeadingEl) {
-            toggleClass($(subHeadingEl), SUBHEADING_OPEN_CLASS);
-          }
-    
-          // Reveal/hide the sublist
-          if (subListEl && subListEl.length === 1) {
-            toggleClass($(subListEl), SUBLIST_HIDDEN_CLASS);
-          }
-        });
-      });
-    }
-    
-    
-    function toggleClass(el, className) {
-      if (el.hasClass(className)) {
-        el.removeClass(className);
-      } else {
-        el.addClass(className);
-      }
-    }
-    
-    // If user opens the menu and then expands the viewport from mobile size without closing the menu,
-    // make sure scrolling is enabled again and that sidenav active class is removed
-    function addResizeListeners() {
-      $(window).resize(function(e) {
-        const width = window.innerWidth; console.log('width: ', width);
-    
-        if (width > 750) {
-          sidenavEl.removeClass(SIDENAV_ACTIVE_CLASS);
-          gridEl.removeClass(GRID_NO_SCROLL_CLASS);
-        }
-      });
-    }
-    
-    // Menu open sidenav icon, shown only on mobile
-    function setMenuClickListener() {
-      $('.header__menu').on('click', function(e) { console.log('clicked menu icon');
-        toggleClass(sidenavEl, SIDENAV_ACTIVE_CLASS);
-        toggleClass(gridEl, GRID_NO_SCROLL_CLASS);
-      });
-    }
-    
-    // Sidenav close icon
-    function setSidenavCloseListener() {
-      $('.sidenav__brand-close').on('click', function(e) {
-        toggleClass(sidenavEl, SIDENAV_ACTIVE_CLASS);
-        toggleClass(gridEl, GRID_NO_SCROLL_CLASS);
-      });
-    }
-    </script>
+  <script src="assets/js/script.js"></script>
   
 </body>
 

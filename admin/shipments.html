@@ -1,0 +1,191 @@
+﻿<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  </head>
+
+
+<body class="bg-light">
+
+  <section class="container-fluid bg-white pt-2 sticky-lg-top">
+    <div class="d-flex">
+      <div class="p-2 flex-grow-1">
+        <i class="fas fa-bars header__menu"></i>
+        <a class="navbar-brand" href="#" id="logo">
+          <img src="../assets/img/logo_aftership.svg" width=""  >
+        </a>
+      </div>
+      <div class="p-2">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      
+        
+        <div class="header__avatar">
+          <div class="dropdown">
+
+           
+            <div class="d-flex align-items-center dropdown-toggle" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="flex-shrink-0">
+              <img src="assets/img/profile.png" class="rounded" alt="" style="width: 45px;">
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <small>
+                John Doe
+              <br/>
+              jdoe@email.com
+              </small>
+            </div>
+          </div>
+
+
+
+
+  <div class="dropdown-menu profile-dropdown" aria-labelledby="profileDropdown">
+    <div class="card" style="width: 18rem;">
+      <div class="position-relative p-2 text-center">
+      <img src="assets/img/profile.png" class="rounded card-img-top position-relative top-0 start-0 " alt="" style="width: 45px;">
+    </div>
+      <div class="card-body text-center " style="margin-top: -10px;">
+        <h6 class="">User Name</h6>
+        <p>user@email.com</p>
+        <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill">Manage Account</a>
+
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <a href="#">
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <i class="fa text-muted mt-1">&#xf013;</i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-muted">
+                Settings
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="list-group-item">
+          <a href="#">
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <i class="fa text-muted mt-1">&#xf0a9;</i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-muted">
+                Sign Out
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+          
+        </div>
+    </div>
+  </section>
+
+  <div class="grid">
+    <aside class="sidenav" style="background-color: #f6f6f7;">
+      <div class="row row--align-v-center row--align-h-center">
+        <ul class="navList">
+          
+          <li>
+              <a href="index.html">
+                <div class="navList__subheading row row--align-v-center ">
+                  <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-home"></i></span> Home</span>
+                </div>
+              </a>
+          </li>
+          
+            <li>
+              <a href="shipments.html">
+                <div class="navList__subheading row row--align-v-center active">
+                  <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-truck "></i></span> Shipments</span>
+                </div>
+              </a>
+          </li>
+          
+            <li>
+            <div class="navList__subheading row row--align-v-center menu-dropdown">
+              <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-newspaper "></i></span> Tracking Pages</span>
+            </div>
+            <ul class="subList subList--hidden">
+              <li class="subList__item"><a href="#">Menu 1</a></li>
+              <li class="subList__item"><a href="#">Menu 2</a></li>
+              <li class="subList__item"><a href="#">Menu 3</a></li>
+              
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-envelope"></i></span> Notifications</span>
+              </div>
+            </a>
+        </li>
+          
+          <li>
+            <a href="#">
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-chart-bar"></i></span> Analytics</span>
+              </div>
+            </a>
+        </li>
+          
+          <li>
+            <a href="#">
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-tree"></i></span> Apps</span>
+              </div>
+            </a>
+        </li>
+          
+        </ul>
+      </div>
+    </aside>
+  
+    <main class="main">
+      <div class="d-flex bd-highlight">
+        <div class="p-2 flex-grow-1 fs-6 fw-bold">Shipments</div>
+        <div class="p-2">
+          <div class="upload-btn-wrapper">
+            <p class="upload-btn"><i class="fas fa-upload"></i> CSV Import</p>
+            <input type="file" name="myfile" />
+          </div>
+        </div>
+        <div class="p-2 ">
+          <div class="dropdown">
+            <a class="text-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              More Actions
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-2">
+          <a href="#" class="btn btn-primary btn-sm">Add Shipment</a> 
+        </div>
+      </div>
+    </main>
+  </div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.js"></script>
+  <script src="assets/js/script.js"></script>
+  
+</body>
+
+</html>
