@@ -235,7 +235,7 @@ html, body {
 
   .active {
     background-color: #edeeef;
-    color: #5b69c3;
+    color: #5b69c3 !important;
     cursor: pointer;
     font-weight: 600;
   }
@@ -287,59 +287,20 @@ html, body {
     margin: 20px;
   }
   
-  .main-header {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    height: 250px;
-    color: #FFF;
-    background-size: cover;
-    margin-bottom: 20px;
+  #page-title {
+    font-weight: 600; 
+    font-size: 20px;
   }
-  .main-header__intro-wrapper {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 160px;
-    padding: 12px 30px;
-    background: rgba(255, 255, 255, 0.12);
-    font-size: 26px;
-    letter-spacing: 1px;
-  }
-  .main-header__welcome {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .main-header__welcome-title {
-    margin-bottom: 8px;
-    font-size: 26px;
-  }
-  .main-header__welcome-subtitle {
-    font-size: 18px;
+
+  #page-subtitle {
+
   }
   
-  .quickview {
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 60px;
+
+  #page-subtitle a {
+    color: #5b69c3;
   }
-  .quickview__item {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .quickview__item-total {
-    margin-bottom: 2px;
-    font-size: 32px;
-  }
-  .quickview__item-description {
-    font-size: 16px;
-    text-align: center;
-  }
-  
+
   .main-overview {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));

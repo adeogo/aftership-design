@@ -109,19 +109,19 @@
           
             <li>
               <a href="shipments.html">
-                <div class="navList__subheading row row--align-v-center active">
+                <div class="navList__subheading row row--align-v-center ">
                   <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-truck "></i></span> Shipments</span>
                 </div>
               </a>
             </li>
           
             <li>
-            <div class="navList__subheading row row--align-v-center menu-dropdown">
+            <div class="navList__subheading row row--align-v-center menu-dropdown ">
               <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-newspaper "></i></span> Tracking Pages</span>
             </div>
-            <ul class="subList subList--hidden">
+            <ul class="subList">
               <li class="subList__item"><a href="tracking_pages.html">Tracking Pages</a></li>
-              <li class="subList__item"><a href="tracking_app.html">Tracking App</a></li>
+              <li class="subList__item active"><a href="tracking_app.html">Tracking App</a></li>
               <li class="subList__item"><a href="order_lookup_widget.html">Order lookup widget</a></li>
               
             </ul>
@@ -177,27 +177,86 @@
     </aside>
   
     <main class="main">
-      <div class="d-flex bd-highlight">
-        <div class="p-2 flex-grow-1 fs-6 fw-bold">Shipments</div>
-        <div class="p-2">
-          <div class="upload-btn-wrapper">
-            <p class="upload-btn"><i class="fas fa-upload"></i> CSV Import</p>
-            <input type="file" name="myfile" />
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h4 id="page-title">AfterShip tracking app</h4>
           </div>
         </div>
-        <div class="p-2 ">
-          <div class="dropdown">
-            <a class="text-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              More Actions
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-            </ul>
+
+        <div class="row my-3">
+          <div class="col-12 col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                  <div class="d-flex">
+                    <div class="flex-grow-1 py-2"><small class="fw-bold">BENEFIT</small></div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <i class="fas fa-traffic-light mt-2 bg-light p-3"> </i>
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <div class="d-flex">
+                        <div class="py-2 flex-grow-1">
+                          <h6 class="fw-bold fs-6">Generate free traffic</h6>
+                          <p class=""><small>Direct customers back to your online store instead of going to carrier website.</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex" style=" margin-top: -20px;">
+                    <div class="flex-shrink-0">
+                      <i class="fas fa-bell mt-2 bg-light p-3"> </i>
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <div class="d-flex mb-2">
+                        <div class="py-2 flex-grow-1">
+                          <h6 class="fw-bold fs-6">Boost brand loyalty</h6>
+                          <p class=""><small>Delight customers with real-time delivery updates.</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex" style=" margin-top: -20px;">
+                    <div class="flex-shrink-0">
+                      <i class="fas fa-mobile mt-2 bg-light p-3"> </i>
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <div class="d-flex mb-2">
+                        <div class="py-2 flex-grow-1">
+                          <h6 class="fw-bold fs-6">Track orders on the go</h6>
+                          <p class=""><small>Enable customers to track orders from mobile.</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6"> 
+            <div class="card">
+                <div class="card-body">
+                  <div class="d-flex">
+                    <div class="flex-grow-1 py-2"><small class="fw-bold">Here’s what it’ll look like</small></div>
+                  </div>
+
+                  <div class="d-flex">
+                    <div class="flex-grow-1 py-2"><small class="fw-normal">Installed by 4.7M shoppers, AfterShip package tracker (4.7★) iOS app
+ and Android app
+ allow your customers to get real-time order status updates.</small></div>
+                  </div>
+
+                  
+                  <img src="assets/img/mobile-tracking.webp" class="img-fluid" alt="">
+
+                </div>
+            </div>
           </div>
         </div>
-        <div class="p-2">
-          <a href="#" class="btn btn-primary btn-sm">Add Shipment</a> 
-        </div>
+
+
       </div>
     </main>
   </div>
