@@ -192,6 +192,7 @@ html, body {
 
   .navList a {
     color: #4c4d4e;
+    font-size: 13px;
   }
 
   .navList__heading {
@@ -207,10 +208,10 @@ html, body {
     position: relative;
     padding: 5px 30px;
     color: #202223;
-    font-size: 16px;
+    font-size: 13px;
   }
   .navList__subheading-icon {
-    font-size: 20px;
+    font-size: 16px;
     color: #919eab;
     width: 12px;
     margin-right: 10px;
@@ -377,17 +378,6 @@ html, body {
     cursor: pointer;
   }
 
-  .upload-btn {
-    /*border: 2px solid gray;
-    color: gray;
-    background-color: white;
-    padding: 8px 20px;
-    border-radius: 8px;
-    font-size: 20px;
-    font-weight: bold;*/
-    cursor: pointer;
-  }
-
   .upload-btn-wrapper input[type=file] {
     font-size: 100px;
     position: absolute;
@@ -396,6 +386,16 @@ html, body {
     opacity: 0;
   }
 
+  .nav-pills .nav-link {
+    color: #7a7f81 !important;
+  }
+
+  .nav-pills .nav-link.active {
+    color: #555 !important;
+    /*background-color: #5b69c3;*/
+    background-color: transparent; !important;
+    border-bottom: 2px solid #5b69c3;
+  }
   
   @media only screen and (min-width: 750px) {
     
