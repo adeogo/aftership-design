@@ -101,7 +101,7 @@
           
           <li>
               <a href="index.html">
-                <div class="navList__subheading row row--align-v-center active">
+                <div class="navList__subheading row row--align-v-center">
                   <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-home"></i></span> Home</span>
                 </div>
               </a>
@@ -145,8 +145,8 @@
                 <span class="navList__subheading-title"><span class="navList__subheading-icon"><i class="fas fa-chart-bar"></i></span> Analytics</span>
               </div>
 
-              <ul class="subList subList--hidden">
-                <li class="subList__item"><a href="analytics_shipment.html">Shipment</a></li>
+              <ul class="subList">
+                <li class="subList__item active"><a href="analytics_shipment.html">Shipment</a></li>
                 <li class="subList__item"><a href="notification.html">Notification</a></li>
                 <li class="subList__item"><a href="tracking_page.html">Tracking page</a></li>
                 <li class="subList__item"><a href="customer_review.html">Customer reviews</a></li>
@@ -180,52 +180,44 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h4 id="page-title">Welcome, User</h4>
-            <p id="page-subtitle">Here’s what’s happening with your shipments in the last 30 days.</p>
+            <h4 id="page-title">Shipment</h4>
+            <p id="page-subtitle">Here is the shipment performance.</p>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-12 col-lg-8">
+          <div class="col-12">
             <div class="row">
-              <div class="col-12 col-lg-6 mb-4">
-                <div class="card card-noborder-bottom">
-                  <div class="card-body">
-                    <h5 class="card-title">VALID TRACKING SHIPMENTS</h5>
-                    <p class="card-text">0 <span>(0%)</span></p>
-                  </div>
-                </div>
-                <div class="card card-noborder-top">
+              
+              <div class="col-12 col-lg-3 mb-3">
+                <div class="card">
                   <div class="card-body">
                     <div class="d-flex">
-                      <h5 class="card-title flex-grow-1">PENDING SHIPMENTS </h5>
+                      <h5 class="card-title flex-grow-1">Total </h5>
                       <a href="#" class=""><i class="fa text-dark">&#xf105;</i></a>
                     </div>
-                    <p class="card-text">0 <span>(0%)</span></p>
+                    <p class="card-text">0 <br/><span>(0%)</span></p>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-6 mb-4">
-                <div class="card card-noborder-bottom">
-                  <div class="card-body">
-                    <div class="d-flex">
-                      <h5 class="card-title flex-grow-1">EXCEPTION SHIPMENTS </h5>
-                      <a href="#" class=""><i class="fa text-dark">&#xf105;</i></a>
-                    </div>
-                    <p class="card-text">0 <span>(0%)</span></p>
-                  </div>
-                </div>
-                <div class="card card-noborder-top">
-                  <div class="card-body">
-                    <div class="d-flex">
-                      <h5 class="card-title flex-grow-1">SHIPMENT RETURNED TO SENDER </h5>
-                      <a href="#" class=""><i class="fa text-dark">&#xf105;</i></a>
-                    </div>
-                    <p class="card-text">0 <span>(0%)</span></p>
 
+              <div class="col-12 col-lg-3 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <h5 class="card-title flex-grow-1">Exception </h5>
+                      <a href="#" class=""><i class="fa text-dark">&#xf105;</i></a>
+                    </div>
+                    <p class="card-text">0 <br/><span></span></p>
                   </div>
                 </div>
               </div>
+
+            </div>      
+      
+
+            <div class="row">
+              
 
               <div class="col-12 mb-4">
                 <div class="card">
