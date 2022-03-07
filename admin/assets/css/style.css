@@ -328,6 +328,10 @@ html, body {
     border-top-right-radius: 8px;
   }
 
+  .card-noborder {
+    border-radius: 0px;
+  }
+
   .card-title {
     font-style: normal;
     font-weight: 600;
