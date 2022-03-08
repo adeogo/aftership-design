@@ -417,6 +417,12 @@ html, body {
     background-color: #f4f6f8 !important;
   }
   /* FEATURE SETTINGS */
+
+  .code-text {
+    border: 1px solid #CCC;
+    background-color: #fafbfb;
+    padding: 5px;
+  }
   
   @media only screen and (min-width: 750px) {
     
